@@ -1,15 +1,15 @@
 @extends('layout.dashboard')
-@section('title', 'Data Sebaran Calon Mahasiswa')
+@section('title', 'Informasi Sebaran Calon Mahasiswa')
 
 @section('content')
 {{-- data visual --}}
 <section>
   <div class="container my-4">
-    <h1 class="h4 mb-4">DATA SEBARAN CALON MAHASISWA</h1>
+    <h1 class="h4 mb-4">INFORMASI SEBARAN CALON MAHASISWA</h1>
     <div class="row align-items-end">
-      <div class="col-lg-12 mb-4">
+      <div class="col-lg-12 mb-2">
         <div class="row">
-          <div class="col-lg-3">
+          <!-- <div class="col-lg-3">
             <form action="" method="GET">
               <div class="mb-3">
                 <label for="tanggal" class="form-label">Tanggal</label>
@@ -20,7 +20,7 @@
               </div>
               <button type="submit" class="btn btn-primary text-capitalize">filter</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-lg-3">
@@ -40,7 +40,7 @@
           <button type="submit" class="btn btn-primary text-capitalize">filter</button>
         </form>
       </div>
-      <div class="col-lg-1 align-self-center">
+      <!-- <div class="col-lg-1 align-self-center">
         <h1 class="h5">atau</h1>
       </div>
       <div class="col-lg-6">
@@ -77,15 +77,15 @@
           </div>
           <button type="submit" class="btn btn-primary text-capitalize">filter</button>
         </form>
-      </div>
+      </div> -->
     </div>
     <div class="d-flex justify-content-between align-items-center mt-4">
-      <h1 class="h5">
-        Total Daftar: {{ $total_pendaftar }} Mahasiswa
-      </h1>
-      <h1 class="h5">Informasi Sebaran Calon Mahasiswa: {{ now()->format('d F Y') }}</h1>
+      <!-- <h1 class="h5">
+        Total Pendaftar: {{ $total_pendaftar }} Mahasiswa
+      </h1> -->
+      <!-- <h1 class="h5">Informasi Sebaran Calon Mahasiswa: {{ now()->format('d F Y') }}</h1> -->
     </div>
-    <div class="row mt-4">
+    <div class="row mt-2">
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
           <div class="card-body">
@@ -102,9 +102,9 @@
           </div>
         </div>
       </div>
-      <div class="prodi_all row">
+      <!-- <div class="prodi_all row">
         <h1 class="h5 mb-4 text-center text-uppercase">program studi dan gender (pie chart)</h1>
-      </div>
+      </div> -->
       <div class="col-lg mb-4">
         <div class="card">
           <div class="card-body">
@@ -193,18 +193,24 @@
         datasets: [{
             data: dataJalurDaftar.map(data => data.count),
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)'
+                'rgba(180, 180, 180)',
+                'rgba(234, 189, 186)',
+                'rgba(231, 212, 155)',
+                'rgba(124, 157, 186)',
+                'rgba(255, 210, 180)',
+                'rgba(193, 143, 187)',
+                'rgba(184, 208, 213)',
+                'rgba(170, 130, 101)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
+                'rgba(112, 112, 112)',
+                'rgba(180, 109, 125)',
+                'rgba(222, 185, 112)',
+                'rgba(47, 80, 121)',
+                'rgba(246, 147, 130)',
+                'rgba(151, 98, 137)',
+                'rgba(113, 180, 213)',
+                'rgba(139, 59, 44)',
             ],
             borderWidth: 1
           }]

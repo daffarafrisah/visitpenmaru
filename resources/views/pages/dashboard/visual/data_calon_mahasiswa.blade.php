@@ -1,15 +1,15 @@
 @extends('layout.dashboard')
-@section('title', 'Data Calon Mahasiswa')
+@section('title', 'Informasi Calon Mahasiswa')
 
 @section('content')
 {{-- data visual --}}
 <section>
   <div class="container my-4">
-    <h1 class="h4 mb-4">DATA CALON MAHASISWA</h1>
+    <h1 class="h4 mb-4">INFORMASI CALON MAHASISWA</h1>
     <div class="row align-items-end">
-      <div class="col-lg-12 mb-4">
+      <div class="col-lg-12 mb-2">
         <div class="row">
-          <div class="col-lg-3">
+          <!-- <div class="col-lg-3">
             <form action="" method="GET">
               <div class="mb-3">
                 <label for="tanggal" class="form-label">Tanggal</label>
@@ -20,7 +20,7 @@
               </div>
               <button type="submit" class="btn btn-primary text-capitalize">filter</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-lg-3">
@@ -40,10 +40,10 @@
           <button type="submit" class="btn btn-primary text-capitalize">filter</button>
         </form>
       </div>
-      <div class="col-lg-1 align-self-center">
+      <!-- <div class="col-lg-1 align-self-center">
         <h1 class="h5">atau</h1>
-      </div>
-      <div class="col-lg-6">
+      </div> -->
+      <!-- <div class="col-lg-6">
         <form action="{{ route('visual.data.calon.mahasiswa') }}" method="GET">
           <div class="row">
             <div class="col">
@@ -77,13 +77,13 @@
           </div>
           <button type="submit" class="btn btn-primary text-capitalize">filter</button>
         </form>
-      </div>
+      </div> -->
     </div>
     <div class="d-flex justify-content-between align-items-center mt-4">
-      <h1 class="h5">Total Daftar: {{ $total_pendaftar }} Mahasiswa</h1>
-      <h1 class="h5">Informasi Calon Mahasiswa: {{ now()->format('d F Y') }}</h1>
+      <h1 class="h5">Total Pendaftar: {{ $total_pendaftar }} Mahasiswa</h1>
+      <!-- <h1 class="h5">Informasi Calon Mahasiswa: {{ now()->format('d F Y') }}</h1> -->
     </div>
-    <div class="row mt-4">
+    <div class="row mt-2">
       <div class="col-lg-4 mb-4">
         <div class="card">
           <div class="card-body">
@@ -111,7 +111,7 @@
             <canvas id="chart_verifikasi_berkas"></canvas>
             <div class="d-flex flex-column align-items-center mt-2">
               <small class="text-muted text-capitalize">
-                sudah unggah berkas: {{ $data['unggah_berkas']['sudah'] }} mahasiswa
+                total pendaftar: {{ $total_pendaftar }} mahasiswa
               </small>
               <small class="text-muted text-capitalize">
                 sudah verifikasi berkas: {{ $data['verifikasi_berkas']['sudah'] }} mahasiswa
@@ -168,10 +168,10 @@
             <canvas id="chart_memiliki_nim"></canvas>
             <div class="d-flex flex-column align-items-center mt-2">
               <small class="text-muted text-capitalize">
-                sudah registrasi ulang: {{ $data['membayar_registrasi']['sudah'] }} mahasiswa
+                sudah registrasi ulang: {{ $data['registrasi_ulang']['sudah'] }} mahasiswa
               </small>
-              <small class="text-muted text-capitalize">
-                sudah memiliki nim: {{ $data['memiliki_nim']['sudah'] }} mahasiswa
+              <small class="text-muted">
+                Sudah Memiliki NIM: {{ $data['memiliki_nim']['sudah'] }} mahasiswa
               </small>
             </div>
           </div>
@@ -186,11 +186,11 @@
             </div>
             <canvas id="chart_mengundurkan_diri"></canvas>
             <div class="d-flex flex-column align-items-center mt-2">
-              <small class="text-muted text-capitalize">
-                sudah memiliki nim: {{ $data['memiliki_nim']['sudah'] }} mahasiswa
+              <small class="text-muted">
+                Sudah Memiliki NIM: {{ $data['memiliki_nim']['sudah'] }} mahasiswa
               </small>
               <small class="text-muted text-capitalize">
-                sudah mengundurkan diri: {{ $data['mengundurkan_diri']['sudah'] }} mahasiswa
+                mengundurkan diri: {{ $data['mengundurkan_diri']['sudah'] }} mahasiswa
               </small>
             </div>
           </div>
@@ -237,12 +237,12 @@
           datasets: [{
               data: [chartData?.sudah, chartData?.belum],
               backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)'
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 99, 132, 0.2)'
               ],
               borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)'
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 99, 132, 1)'
               ],
               borderWidth: 1,
               cutout: '60%'

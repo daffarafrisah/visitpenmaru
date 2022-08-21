@@ -57,9 +57,9 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
-                <a class="dropdown-item" href="{{ route('visual.data.calon.mahasiswa') }}">Data Calon Mahasiswa</a>
+                <a class="dropdown-item" href="{{ route('visual.data.calon.mahasiswa') }}">Informasi Calon Mahasiswa</a>
               </li>
-              <li><a class="dropdown-item" href="{{ route('visual.data.sebaran.calon.mahasiswa') }}">Data Sebaran Calon
+              <li><a class="dropdown-item" href="{{ route('visual.data.sebaran.calon.mahasiswa') }}">Informasi Sebaran Calon
                   Mahasiswa</a></li>
             </ul>
           </li>

@@ -42,7 +42,7 @@
                   <div class="icon">
                     <i class="fa-solid fa-pie-chart"></i>
                   </div>
-                  <h1 class="h5">Data Calon Mahasiswa</h1>
+                  <h1 class="h5">Informasi Calon Mahasiswa</h1>
                 </div>
               </div>
             </a>
@@ -54,7 +54,7 @@
                   <div class="icon">
                     <i class="fa-solid fa-bar-chart"></i>
                   </div>
-                  <h1 class="h5">Data Sebaran Calon Mahasiswa</h1>
+                  <h1 class="h5">Informasi Sebaran Calon Mahasiswa</h1>
                 </div>
               </div>
             </a>

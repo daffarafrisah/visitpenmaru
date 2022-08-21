@@ -12,13 +12,13 @@
           <div class="row">
             <div class="col-lg">
               <div class="mb-3">
-                <label for="search_data" class="form-label">Data Visualisasi</label>
+                <label for="search_data" class="form-label">Visualisasi Informasi</label>
                 <div class="input-group">
                   <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
                   <select class="form-select" id="search_data" name="search_data">
                     <option disabled selected>Pilih</option>
-                    <option value="data_calon_mahasiswa">Data Calon Mahasiswa</option>
-                    <option value="data_sebaran_calon_mahasiswa">Data Sebaran Calon Mahasiswa</option>
+                    <option value="data_calon_mahasiswa">Informasi Calon Mahasiswa</option>
+                    <option value="data_sebaran_calon_mahasiswa">Informasi Sebaran Calon Mahasiswa</option>
                   </select>
                 </div>
               </div>
