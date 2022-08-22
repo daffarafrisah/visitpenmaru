@@ -193,24 +193,24 @@
         datasets: [{
             data: dataJalurDaftar.map(data => data.count),
             backgroundColor: [
-                'rgba(180, 180, 180)',
-                'rgba(234, 189, 186)',
-                'rgba(231, 212, 155)',
-                'rgba(124, 157, 186)',
-                'rgba(255, 210, 180)',
-                'rgba(193, 143, 187)',
-                'rgba(184, 208, 213)',
-                'rgba(170, 130, 101)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 177, 86, 0.2)',
+                'rgba(54, 235, 61, 0.2)',
+                'rgba(188, 54, 235, 0.2)',
+                'rgba(231, 235, 54, 0.2)',
+                'rgba(235, 54, 54, 0.2)',
+                'rgba(54, 235, 224, 0.2)',
             ],
             borderColor: [
-                'rgba(112, 112, 112)',
-                'rgba(180, 109, 125)',
-                'rgba(222, 185, 112)',
-                'rgba(47, 80, 121)',
-                'rgba(246, 147, 130)',
-                'rgba(151, 98, 137)',
-                'rgba(113, 180, 213)',
-                'rgba(139, 59, 44)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(68, 235, 54, 1)',
+                'rgba(188, 54, 235, 1)',
+                'rgba(231, 235, 54, 1)',
+                'rgba(235, 54, 54, 1)',
+                'rgba(54, 235, 235, 1)',
             ],
             borderWidth: 1
           }]
@@ -243,10 +243,10 @@
             label: 'Laki - Laki',
             data: dataProgramStudi.laki_laki,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)'
+                'rgba(54, 162, 235, 0.2)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)'
+                'rgba(54, 162, 235, 1)'
             ],
             borderWidth: 1
           },
@@ -254,10 +254,10 @@
             label: 'Perempuan',
             data: dataProgramStudi.perempuan,
             backgroundColor: [
-                'rgba(255, 206, 86, 0.2)'
+                'rgba(255, 99, 132, 0.2)'
             ],
             borderColor: [
-                'rgba(255, 206, 86, 1)'
+                'rgba(255, 99, 132, 1)'
             ],
             borderWidth: 1
           }]

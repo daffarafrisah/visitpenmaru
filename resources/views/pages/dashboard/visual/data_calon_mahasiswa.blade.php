@@ -29,10 +29,17 @@
             <label for="search_tahun" class="form-label">Tahun</label>
             <div class="input-group">
               <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+              @php
+                if(isset($_GET['search_tahun'])){
+                  $tahunn = $_GET['search_tahun'];
+                }else{
+                  $tahunn = null;
+                }
+              @endphp
               <select class="form-select" id="search_tahun" name="search_tahun">
-                <option disabled selected>Pilih</option>
+                <option disabled selected style="display:none;">Pilih</option>
                 @foreach ($tahun['semua'] as $loopItem)
-                <option value="{{ '20' . $loopItem['tahun'] }}">{{ '20' . $loopItem['tahun'] }}</option>
+                <option value="{{ '20' . $loopItem['tahun'] }}" @if($tahunn == '20'.$loopItem['tahun']) selected @endif>{{ '20' . $loopItem['tahun'] }}</option>
                 @endforeach
               </select>
             </div>

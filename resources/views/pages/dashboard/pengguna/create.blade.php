@@ -30,7 +30,7 @@
             <label for="email_pengguna" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="email_pengguna" name="email_pengguna"
-                placeholder="masukkan email Dinamika">
+                placeholder="example@dinamika.ac.id">
               @error('email')<small class="text-danger">{{ $message }}</small>@enderror
             </div>
           </div>
@@ -38,7 +38,7 @@
             <label for="jabatan_pengguna" class="col-sm-2 col-form-label">Jabatan</label>
             <div class="col-sm-10">
               <select class="form-select" id="jabatan_pengguna" name="jabatan_pengguna">
-                <option disabled selected>--Pilih</option>
+                <option disabled selected>Pilih</option>
                 <option value="warek">Warek</option>
                 <option value="kabag">Kabag</option>
                 <option value="staf">Staf</option>
